@@ -23,7 +23,7 @@ public class GestorTareas {
 
     public void completarTarea(Tarea tarea) {
         enProgreso.remove(tarea);
-        tarea.marcarComoCompletado((int) (Math.random() * 10 + 1)); // Simular tiempo de procesamiento
+        tarea.marcarComoCompletado((int) (Math.random() * 10 + 1));
         completadas.push(tarea);
     }
 

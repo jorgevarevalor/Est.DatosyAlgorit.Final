@@ -75,12 +75,4 @@ public class Tarea {
         registrarActividad("Tarea completada");
     }
 
-    public void editarTarea(String titulo, String descripcion, String asignadoA, int prioridad, Date fechaVencimiento) {
-        this.titulo = titulo;
-        this.descripcion = descripcion;
-        this.asignadoA = asignadoA;
-        this.prioridad = prioridad;
-        this.fechaVencimiento = fechaVencimiento;
-        registrarActividad("Tarea editada");
-    }
 }

@@ -21,7 +21,7 @@ public class SistemaGestorTareas {
             System.out.println("10. Salir");
             System.out.print("Ingrese su opción: ");
             int opcion = scanner.nextInt();
-            scanner.nextLine(); // Consumir el carácter de nueva línea
+            scanner.nextLine();
 
             switch (opcion) {
                 case 1:
@@ -53,7 +53,7 @@ public class SistemaGestorTareas {
                     break;
                 case 10:
                     System.out.println("Saliendo del Sistema de Gestión de Tareas...");
-                    scanner.close(); // Cerrar el scanner para prevenir pérdida de recursos
+                    scanner.close();
                     return;
                 default:
                     System.out.println("Opción inválida. Por favor, inténtelo de nuevo.");
@@ -70,7 +70,7 @@ public class SistemaGestorTareas {
         String asignado = scanner.nextLine();
         System.out.print("Ingrese la prioridad de la tarea (1-5): ");
         int prioridad = scanner.nextInt();
-        scanner.nextLine(); // Consumir el carácter de nueva línea
+        scanner.nextLine();
         System.out.print("Ingrese la fecha de vencimiento de la tarea (yyyy-MM-dd): ");
         String fechaString = scanner.nextLine();
         Date fechaVencimiento = null;
@@ -185,7 +185,7 @@ public class SistemaGestorTareas {
         System.out.println("3. Completadas");
         System.out.print("Ingrese el número de destino: ");
         int destino = scanner.nextInt();
-        scanner.nextLine(); // Consumir el carácter de nueva línea
+        scanner.nextLine();
         Stack<Tarea> colaDestino = null;
         switch (destino) {
             case 1:
